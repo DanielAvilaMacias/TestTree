@@ -386,50 +386,6 @@ void busqueda_costo(char jugada[9])
 
 int costo(node * aux,int posicion, char simbolo)
 {
-	int total = 0;
-	switch (posicion) {
-	case 0:
-		if ((aux->mov[1] == simbolo || aux->mov[1] == '-') && (aux->mov[2] == simbolo || aux->mov[2] == '-')) { total++; }
-		if ((aux->mov[3] == simbolo || aux->mov[3] == '-') && (aux->mov[6] == simbolo || aux->mov[6] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		break;
-	case 1:
-		if ((aux->mov[0] == simbolo || aux->mov[0] == '-') && (aux->mov[2] == simbolo || aux->mov[2] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[7] == simbolo || aux->mov[7] == '-')) { total++; }
-		break;
-	case 2:
-		if ((aux->mov[0] == simbolo || aux->mov[0] == '-') && (aux->mov[1] == simbolo || aux->mov[1] == '-')) { total++; }
-		if ((aux->mov[5] == simbolo || aux->mov[5] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[6] == simbolo || aux->mov[6] == '-')) { total++; }
-		break;
-	case 3:
-		if ((aux->mov[0] == simbolo || aux->mov[0] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[5] == simbolo || aux->mov[5] == '-')) { total++; }
-		break;
-	case 4:
-		if ((aux->mov[0] == simbolo || aux->mov[0] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		if ((aux->mov[1] == simbolo || aux->mov[1] == '-') && (aux->mov[7] == simbolo || aux->mov[7] == '-')) { total++; }
-		if ((aux->mov[2] == simbolo || aux->mov[2] == '-') && (aux->mov[6] == simbolo || aux->mov[6] == '-')) { total++; }
-		if ((aux->mov[3] == simbolo || aux->mov[3] == '-') && (aux->mov[5] == simbolo || aux->mov[5] == '-')) { total++; }
-		break;
-	case 5:
-		if ((aux->mov[2] == simbolo || aux->mov[2] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[3] == simbolo || aux->mov[3] == '-')) { total++; }
-		break;
-	case 6:
-		if ((aux->mov[0] == simbolo || aux->mov[0] == '-') && (aux->mov[3] == simbolo || aux->mov[3] == '-')) { total++; }
-		if ((aux->mov[7] == simbolo || aux->mov[7] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[2] == simbolo || aux->mov[2] == '-')) { total++; }
-		break;
-	case 7:
-		if ((aux->mov[6] == simbolo || aux->mov[6] == '-') && (aux->mov[8] == simbolo || aux->mov[8] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[1] == simbolo || aux->mov[1] == '-')) { total++; }
-		break;
-	case 8:
-		if ((aux->mov[5] == simbolo || aux->mov[5] == '-') && (aux->mov[2] == simbolo || aux->mov[2] == '-')) { total++; }
-		if ((aux->mov[7] == simbolo || aux->mov[7] == '-') && (aux->mov[6] == simbolo || aux->mov[6] == '-')) { total++; }
-		if ((aux->mov[4] == simbolo || aux->mov[4] == '-') && (aux->mov[0] == simbolo || aux->mov[0] == '-')) { total++; }
-		break;
-	}
-	return total;
+	// Todavia no se que va aqui
+	return 0;
 }
